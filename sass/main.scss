@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Aleo';
     src: url(../fonts/Aleo-Regular.otf);
+    src: url(../fonts/Aleo-Regular1.woff);
 }
 @media screen and (max-width: 800px) {
     #menu {
@@ -9,6 +10,33 @@
     #mobile-nav {
         display: block !important;
     }
+}
+@media screen and (max-width: 768px) {
+    .button-title {
+        display: none;
+    }
+}
+
+@mixin placeholder-style {
+    color: #999999;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2.8px;
+    text-align: center;
+}
+
+@mixin button-style {
+    z-index: 99;
+        background-image: url(../img/Rectangle_8.png);
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        height: 60px;
+        background-color: rgba(84, 116, 253, 1);
+        &:hover {
+            opacity: 0.9;
+        }
 }
 
 .header {
@@ -26,6 +54,7 @@
         text-transform: uppercase;
         letter-spacing: 4.8px;
     }
+
     .header-description {
         color: #ffffff;
         font-family: 'Josefin Sans', sans-serif;
@@ -35,21 +64,25 @@
         padding-bottom:  50px;
         
     }
+
     .input-field {
         height: 60px;
+
         & ::placeholder {
-            color: #999999;
-            font-family: 'Josefin Sans';
-            font-size: 14px;
-            font-weight: 400;
-            letter-spacing: 2.8px;
-            text-align: center;
-            .header-input {
-                padding-left: 20px !important;
-            }
+            @include placeholder-style;
+        }
+        & :-ms-input-placeholder {
+            @include placeholder-style;
+        }
+
+        .header-input {
+            padding-left: 20px !important;
+            box-sizing: border-box;
+            border: 0;
         }
 
         .header-button {
+            line-height: 55px;
             height: 60px;
             width: 100%;
             border: 2px solid #ffffff;
@@ -65,8 +98,6 @@
                 background-color: #2840DA;  
             }
         }  
-
-    
     }
     .srcoll-title {
         padding-top: 120px;
@@ -80,17 +111,17 @@
     
     .scroll-icon {
         color: white;
-        
     }
+
     #scroll-icon {
         background: none;
         border: none;
         outline: none;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #2840DA;
+        }
     }
-
-    
-
-
 }
 
 
@@ -107,16 +138,16 @@
             letter-spacing: 2.4px;
         }  
         .navigation-item {
+            line-height: 80px;
             color: #ffffff;
             font-family: 'Aleo';
             font-size: 14px;
             font-weight: 400;
             text-transform: uppercase;
             text-decoration: none;
-        &:hover {
-            color: #2840DA;
-        }
-            
+            &:hover {
+                color: #2840DA;
+            }   
         }
         .mobile-nav {
             display: none;
@@ -128,43 +159,33 @@
         }
     }
 
-    @supports not (align-items: center) {
-            .navigation-menu {
-                .navigation-item {
-                padding-top: 30px !important;
+    .mobile-menu {
+        display: none;
+        .navigation-item {
+            color: #ffffff;
+            font-family: 'Aleo';
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: block;
+            text-align: right;
+            padding: 10px 0 10px;
+
+            &:hover {
+                color: #2840DA;
             }
         }
     }
-    .mobile-menu {
-            display: none;
-            .navigation-item {
-                color: #ffffff;
-                font-family: 'Aleo';
-                font-size: 14px;
-                font-weight: 400;
-                text-transform: uppercase;
-                text-decoration: none;
-                display: block;
-                text-align: right;
-                padding: 10px 0 10px;
-
-                &:hover {
-                    color: #2840DA;
-                }
-
-            
-            }
-
-
-        }
 }
+
 @media screen and (max-width: 992px) {
     #image-one {
         padding-top: 90px ;
         padding-left: 0;
-
     }
 }
+
 .advertising {
     background-image: url(../img/advertising_bg.png);
     min-height: 685px;
@@ -187,14 +208,8 @@
         padding-bottom: 48px ;
     }
     .arvertising-button {
-        z-index: 99;
-        background-image: url(../img/Rectangle_8.png);
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        height: 60px;
-        background-color: rgba(84, 116, 253, 1);
-        // width: 40%;
+        @include button-style;
+    
         a {
             align-self: center;
             text-decoration: none;
@@ -212,13 +227,25 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-
         .image-one {
             padding-left: 65px;
         }
         .image-two {
-            align-self: flex-end;;
+            align-self: flex-end;
         }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .advertising-images {
+        justify-content: space-around !important;
+    }
+    #image-one {
+        padding-left: 0;
+        align-self: center;
+    }
+    #image-two {
+        align-self: center;
     }
 }
 
@@ -237,6 +264,9 @@
             font-size: 36px;
             font-weight: 400;
             line-height: 36px;
+            &:hover {
+                color: #5474fd;
+            }    
         }
     }
     .action-arrow-left {
@@ -246,7 +276,7 @@
         top: 14%;
         left: 22%;
         height: 103px;
-        border: 1px dotted  #ffffff;
+        border: 2px dotted #ffffff;
         border-color: #ffffff transparent transparent transparent;
         border-radius: 50%/100px 100px 0 0;
         opacity: 0.5;
@@ -258,7 +288,7 @@
         top: 14%;
         right: 22%;
         height: 103px;
-        border: 1px dotted  #ffffff;
+        border: 2px dotted #ffffff;
         border-color: #ffffff transparent transparent transparent;
         border-radius: 50%/100px 100px 0 0;
         opacity: 0.5;
@@ -280,7 +310,6 @@
     background-image: url(../img/booking1_bg.png);
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
 .booking-two {
@@ -324,16 +353,9 @@
             line-height: 26px;
         }
         .book {
-            z-index: 99;
-            background-image: url(../img/Rectangle_8.png);
-            background-repeat: no-repeat;
             margin-left: 30px;
-            display: flex;
-            justify-content: center;
-            
-            height: 60px;
-            background-color: rgba(84, 116, 253, 1);
             width: 40%;
+            @include button-style;
             a {
                 align-self: center;
                 text-decoration: none;
@@ -344,18 +366,15 @@
                 line-height: 16px;
                 text-transform: uppercase;
                 letter-spacing: 1.2px;
-                
             }
         }
     }
-
 }
-
 
 .testimonial {
     background-image: url(../img/testimonial_bg.png);
     background-repeat: no-repeat;
-    min-height: 731px;
+    min-height: 730px;
     .testimonial-name {
         padding-top: 120px;
         padding-bottom: 94px;
@@ -402,6 +421,7 @@
         }
     }
 }
+
 @media screen and (max-width: 1200px) {
     #testimonial {
         background-image: url(../img/testimonial_sm_bg.png);
@@ -447,21 +467,5 @@
                 color: #5474fd;
             }
         }
-    }
-    
-}
-
-.ellipse {
-    background: red;
-    width: 200px;   
-    height: 250px; 
-    border-bottom-left-radius: 50% 25%;
-    border-bottom-right-radius: 50% 25%;
-    border-top-left-radius: 50% 25%;
-    border-top-right-radius: 50% 25%;
-  }
-
-.cont-el {
-    height: 100px;
-    top: 10px;
+    }  
 }

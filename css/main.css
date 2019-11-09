@@ -1,12 +1,17 @@
 @font-face {
   font-family: 'Aleo';
-  src: url(../fonts/Aleo-Regular.otf); }
+  src: url(../fonts/Aleo-Regular.otf);
+  src: url(../fonts/Aleo-Regular1.woff); }
 
 @media screen and (max-width: 800px) {
   #menu {
     display: none; }
   #mobile-nav {
     display: block !important; } }
+
+@media screen and (max-width: 768px) {
+  .button-title {
+    display: none; } }
 
 .header {
   background-image: url(../img/header_bg.png);
@@ -33,14 +38,24 @@
     height: 60px; }
     .header .input-field ::placeholder {
       color: #999999;
-      font-family: 'Josefin Sans';
+      font-family: 'Josefin Sans', sans-serif;
       font-size: 14px;
       font-weight: 400;
       letter-spacing: 2.8px;
       text-align: center; }
-      .header .input-field ::placeholder .header-input {
-        padding-left: 20px !important; }
+    .header .input-field :-ms-input-placeholder {
+      color: #999999;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 2.8px;
+      text-align: center; }
+    .header .input-field .header-input {
+      padding-left: 20px !important;
+      box-sizing: border-box;
+      border: 0; }
     .header .input-field .header-button {
+      line-height: 55px;
       height: 60px;
       width: 100%;
       border: 2px solid #ffffff;
@@ -68,6 +83,9 @@
     background: none;
     border: none;
     outline: none; }
+    .header #scroll-icon:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      color: #2840DA; }
 
 .navigation-menu {
   background-color: #5474fd; }
@@ -81,6 +99,7 @@
       text-transform: uppercase;
       letter-spacing: 2.4px; }
     .navigation-menu .row .navigation-item {
+      line-height: 80px;
       color: #ffffff;
       font-family: 'Aleo';
       font-size: 14px;
@@ -95,9 +114,6 @@
       font-size: 32px; }
       .navigation-menu .row .mobile-nav .icon {
         color: white !important; }
-  @supports not (align-items: center) {
-    .navigation-menu .navigation-menu .navigation-item {
-      padding-top: 30px !important; } }
   .navigation-menu .mobile-menu {
     display: none; }
     .navigation-menu .mobile-menu .navigation-item {
@@ -145,6 +161,8 @@
     justify-content: center;
     height: 60px;
     background-color: #5474fd; }
+    .advertising .arvertising-button:hover {
+      opacity: 0.9; }
     .advertising .arvertising-button a {
       align-self: center;
       text-decoration: none;
@@ -165,6 +183,15 @@
     .advertising .advertising-images .image-two {
       align-self: flex-end; }
 
+@media screen and (max-width: 576px) {
+  .advertising-images {
+    justify-content: space-around !important; }
+  #image-one {
+    padding-left: 0;
+    align-self: center; }
+  #image-two {
+    align-self: center; } }
+
 .action {
   min-height: 337px;
   background-color: #333333;
@@ -179,6 +206,8 @@
       font-size: 36px;
       font-weight: 400;
       line-height: 36px; }
+      .action .item .action-title:hover {
+        color: #5474fd; }
   .action .action-arrow-left {
     position: absolute;
     z-index: 1;
@@ -186,7 +215,7 @@
     top: 14%;
     left: 22%;
     height: 103px;
-    border: 1px dotted  #ffffff;
+    border: 2px dotted #ffffff;
     border-color: #ffffff transparent transparent transparent;
     border-radius: 50%/100px 100px 0 0;
     opacity: 0.5; }
@@ -197,7 +226,7 @@
     top: 14%;
     right: 22%;
     height: 103px;
-    border: 1px dotted  #ffffff;
+    border: 2px dotted #ffffff;
     border-color: #ffffff transparent transparent transparent;
     border-radius: 50%/100px 100px 0 0;
     opacity: 0.5; }
@@ -251,15 +280,17 @@
       font-weight: 400;
       line-height: 26px; }
     .booking .booking-description .book {
+      margin-left: 30px;
+      width: 40%;
       z-index: 99;
       background-image: url(../img/Rectangle_8.png);
       background-repeat: no-repeat;
-      margin-left: 30px;
       display: flex;
       justify-content: center;
       height: 60px;
-      background-color: #5474fd;
-      width: 40%; }
+      background-color: #5474fd; }
+      .booking .booking-description .book:hover {
+        opacity: 0.9; }
       .booking .booking-description .book a {
         align-self: center;
         text-decoration: none;
@@ -274,7 +305,7 @@
 .testimonial {
   background-image: url(../img/testimonial_bg.png);
   background-repeat: no-repeat;
-  min-height: 731px; }
+  min-height: 730px; }
   .testimonial .testimonial-name {
     padding-top: 120px;
     padding-bottom: 94px;
@@ -349,16 +380,3 @@
       font-weight: 400; }
       .footer .footer-links .footer-icon:hover {
         color: #5474fd; }
-
-.ellipse {
-  background: red;
-  width: 200px;
-  height: 250px;
-  border-bottom-left-radius: 50% 25%;
-  border-bottom-right-radius: 50% 25%;
-  border-top-left-radius: 50% 25%;
-  border-top-right-radius: 50% 25%; }
-
-.cont-el {
-  height: 100px;
-  top: 10px; }

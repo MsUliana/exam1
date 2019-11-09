@@ -12,6 +12,8 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/normalize.css">
+
 </head>
 
 <body>
@@ -24,29 +26,33 @@
                 <div class="">Safe Travel Anywhere</div>
             </div>
 
-            <form action="" class="row justify-content-center input-field">
-                <input class="header-input col-xl-5 col-md-6 col-sm-8 col-8" type="text"
-                    placeholder="Search Your Travel Destination">
-                <div class="col-xl-2 col-md-2 cpl-sm-2 col-3">
-                    <button class="header-button row justify-content-between">
-                        <div class="button-title col-xl-8 col-md-8 col-12">Search</div>
-                        <div class="button-icon col-xl-4 col-md-4 col-12">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 32 32">
-                                <g id="icomoon-ignore">
-                                </g>
-                                <path
-                                    d="M28.591 27.273l-7.263-7.264c1.46-1.756 2.339-4.010 2.339-6.471 0-5.595-4.535-10.129-10.129-10.129-5.594 0-10.129 4.535-10.129 10.129 0 5.594 4.536 10.129 10.129 10.129 2.462 0 4.716-0.879 6.471-2.339l7.263 7.264 1.319-1.319zM4.475 13.538c0-4.997 4.065-9.063 9.063-9.063 4.997 0 9.063 4.066 9.063 9.063s-4.066 9.063-9.063 9.063c-4.998 0-9.063-4.066-9.063-9.063z"
-                                    fill="white"></path>
-                            </svg>
-                        </div>
-                    </button>
+            <form action="#" method="get">
+                <div class=" row justify-content-center input-field">
+                    <input class="header-input col-xl-5 col-md-6 col-sm-9 col-8" type="text"
+                        placeholder="Search Your Travel Destination">
+                    <div class="col-xl-2 col-md-3 col-sm-3 col-3">
+                        <button class="header-button row justify-content-between">
+                            <div class="button-title col-xl-8 col-md-8 col-sm-9 col-12">Search</div>
+                            <div class="button-icon col-xl-4 col-md-4 col-sm-12 col-12">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"
+                                    viewBox="0 0 32 32">
+                                    <g id="icomoon-ignore">
+                                    </g>
+                                    <path
+                                        d="M28.591 27.273l-7.263-7.264c1.46-1.756 2.339-4.010 2.339-6.471 0-5.595-4.535-10.129-10.129-10.129-5.594 0-10.129 4.535-10.129 10.129 0 5.594 4.536 10.129 10.129 10.129 2.462 0 4.716-0.879 6.471-2.339l7.263 7.264 1.319-1.319zM4.475 13.538c0-4.997 4.065-9.063 9.063-9.063 4.997 0 9.063 4.066 9.063 9.063s-4.066 9.063-9.063 9.063c-4.998 0-9.063-4.066-9.063-9.063z"
+                                        fill="white"></path>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
                 </div>
             </form>
 
             <div class="srcoll-title row justify-content-center">Scroll Down</div>
-            <div class="row justify-content-center"><button id="scroll-icon" class="scroll-icon" onclick="scrollDown"><i
-                        class="fas fa-chevron-down"></i></button></div>
+            <div class="row justify-content-center"><button id="scroll-icon" class="scroll-icon" onclick="scrollDown">
+                    <i class="fas fa-chevron-down"></i></button>
+            </div>
         </div>
     </section>
 
@@ -63,8 +69,8 @@
                     <a href="#footer" class="navigation-item">Contact Us</a>
                 </div>
 
-                <div id="mobile-nav" class="mobile-nav col-1">
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <div id="mobile-nav" class="mobile-nav col-2">
+                    <a href="javascript:void(0);" class="icon" onclick="scrollToBottom()">
                         <i class="fa fa-bars"></i>
                     </a>
                 </div>
@@ -87,10 +93,11 @@
                     <div class="advertising-title">Why Choose Us</div>
                     <div class="advertising-text">Tion and dislike men who are so beguiled and demoralized by desire by
                         the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
-                        </br></br>
+                        </br>
+                        </br>
                         Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so
                         blinded by desire, that.</div>
-                    <div class="arvertising-button button-design col-xl-5 col-lg-6 col-md-6 col-sm-8 col-8 ">
+                    <div class="arvertising-button button-design col-xl-5 col-lg-6 col-md-5 col-sm-5 col-6 ">
                         <a href="" class="button-design-link">Explore Places
                         </a></div>
                 </div>
@@ -165,7 +172,7 @@
     <section class="booking-one booking" id="booking-one">
         <div class="container">
             <div class="row no-gutters">
-                <div class="booking-description col-xl-6 ">
+                <div class="booking-description col-xl-6 col-lg-8">
                     <div class="country-name">Spain </div>
                     <div class="hotel-name">Grand Spain Madrid</div>
                     <div class="hotel-description">But I must explain to you how all this mistaken idea of account to
@@ -186,7 +193,7 @@
     <section class="booking-two booking">
         <div class="container">
             <div class="row justify-content-end no-gutters">
-                <div class="booking-description  col-xl-6">
+                <div class="booking-description  col-xl-6 col-lg-8">
                     <div class="country-name">Spain </div>
                     <div class="hotel-name">Grand Spain Madrid</div>
                     <div class="hotel-description">But I must explain to you how all this mistaken idea of account to
@@ -254,7 +261,7 @@
     </section>
 
     <script>
-        function myFunction() {
+        function scrollToBottom() {
             var x = document.getElementById("mobile-menu");
             if (x.style.display === "block") {
                 x.style.display = "none";
