@@ -1,0 +1,364 @@
+@font-face {
+  font-family: 'Aleo';
+  src: url(../fonts/Aleo-Regular.otf); }
+
+@media screen and (max-width: 800px) {
+  #menu {
+    display: none; }
+  #mobile-nav {
+    display: block !important; } }
+
+.header {
+  background-image: url(../img/header_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 740px; }
+  .header .header-title {
+    padding-top: 265px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4.8px; }
+  .header .header-description {
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 6.82px;
+    padding-bottom: 50px; }
+  .header .input-field {
+    height: 60px; }
+    .header .input-field ::placeholder {
+      color: #999999;
+      font-family: 'Josefin Sans';
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 2.8px;
+      text-align: center; }
+      .header .input-field ::placeholder .header-input {
+        padding-left: 20px !important; }
+    .header .input-field .header-button {
+      height: 60px;
+      width: 100%;
+      border: 2px solid #ffffff;
+      background-color: #5474fd;
+      color: #ffffff;
+      font-family: 'Aleo';
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      text-align: center; }
+      .header .input-field .header-button:hover {
+        background-color: #2840DA; }
+  .header .srcoll-title {
+    padding-top: 120px;
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2.8px; }
+  .header .scroll-icon {
+    color: white; }
+  .header #scroll-icon {
+    background: none;
+    border: none;
+    outline: none; }
+
+.navigation-menu {
+  background-color: #5474fd; }
+  .navigation-menu .row {
+    min-height: 80px; }
+    .navigation-menu .row .logo__text {
+      color: #ffffff;
+      font-family: 'Josefin San', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2.4px; }
+    .navigation-menu .row .navigation-item {
+      color: #ffffff;
+      font-family: 'Aleo';
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-decoration: none; }
+      .navigation-menu .row .navigation-item:hover {
+        color: #2840DA; }
+    .navigation-menu .row .mobile-nav {
+      display: none;
+      text-decoration: none;
+      font-size: 32px; }
+      .navigation-menu .row .mobile-nav .icon {
+        color: white !important; }
+  @supports not (align-items: center) {
+    .navigation-menu .navigation-menu .navigation-item {
+      padding-top: 30px !important; } }
+  .navigation-menu .mobile-menu {
+    display: none; }
+    .navigation-menu .mobile-menu .navigation-item {
+      color: #ffffff;
+      font-family: 'Aleo';
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: block;
+      text-align: right;
+      padding: 10px 0 10px; }
+      .navigation-menu .mobile-menu .navigation-item:hover {
+        color: #2840DA; }
+
+@media screen and (max-width: 992px) {
+  #image-one {
+    padding-top: 90px;
+    padding-left: 0; } }
+
+.advertising {
+  background-image: url(../img/advertising_bg.png);
+  min-height: 685px; }
+  .advertising .advertising-title {
+    padding: 204px 0 62px;
+    color: #ffffff;
+    font-family: 'Aleo';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px; }
+  .advertising .advertising-text {
+    color: #e8e8e8;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+    text-align: justify;
+    padding-bottom: 48px; }
+  .advertising .arvertising-button {
+    z-index: 99;
+    background-image: url(../img/Rectangle_8.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    background-color: #5474fd; }
+    .advertising .arvertising-button a {
+      align-self: center;
+      text-decoration: none;
+      color: #ffffff;
+      font-family: 'Aleo';
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px; }
+  .advertising .advertising-images {
+    min-height: 685px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .advertising .advertising-images .image-one {
+      padding-left: 65px; }
+    .advertising .advertising-images .image-two {
+      align-self: flex-end; }
+
+.action {
+  min-height: 337px;
+  background-color: #333333;
+  position: relative; }
+  .action .item {
+    padding-top: 110px; }
+    .action .item .action-icon {
+      text-align: center; }
+    .action .item .action-title {
+      color: #e8e8e8;
+      font-family: 'Aleo';
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 36px; }
+  .action .action-arrow-left {
+    position: absolute;
+    z-index: 1;
+    width: 29%;
+    top: 14%;
+    left: 22%;
+    height: 103px;
+    border: 1px dotted  #ffffff;
+    border-color: #ffffff transparent transparent transparent;
+    border-radius: 50%/100px 100px 0 0;
+    opacity: 0.5; }
+  .action .action-arrow-right {
+    position: absolute;
+    z-index: 1;
+    width: 29%;
+    top: 14%;
+    right: 22%;
+    height: 103px;
+    border: 1px dotted  #ffffff;
+    border-color: #ffffff transparent transparent transparent;
+    border-radius: 50%/100px 100px 0 0;
+    opacity: 0.5; }
+
+@media screen and (max-width: 768px) {
+  #action-arrow-left {
+    display: none; }
+  #action-arrow-right {
+    display: none; }
+  .action-three {
+    padding-bottom: 60px; } }
+
+.booking-one {
+  background-image: url(../img/booking1_bg.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.booking-two {
+  background-image: url(../img/booking2_bg.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.booking {
+  min-height: 700px;
+  padding-top: 229px; }
+  .booking .booking-description {
+    min-height: 371px;
+    background-color: rgba(35, 35, 35, 0.9);
+    padding-top: 50px; }
+    .booking .booking-description .country-name {
+      color: #e8e8e8;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 1.5px;
+      padding-left: 30px; }
+    .booking .booking-description .hotel-name {
+      padding: 30px;
+      color: #ffffff;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 20px;
+      text-transform: uppercase; }
+    .booking .booking-description .hotel-description {
+      padding: 0 30px 48px;
+      color: #e8e8e8;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px; }
+    .booking .booking-description .book {
+      z-index: 99;
+      background-image: url(../img/Rectangle_8.png);
+      background-repeat: no-repeat;
+      margin-left: 30px;
+      display: flex;
+      justify-content: center;
+      height: 60px;
+      background-color: #5474fd;
+      width: 40%; }
+      .booking .booking-description .book a {
+        align-self: center;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Aleo';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px; }
+
+.testimonial {
+  background-image: url(../img/testimonial_bg.png);
+  background-repeat: no-repeat;
+  min-height: 731px; }
+  .testimonial .testimonial-name {
+    padding-top: 120px;
+    padding-bottom: 94px;
+    color: #ffffff;
+    font-family: 'Aleo';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px; }
+  .testimonial .testimonial-image img {
+    width: 100%; }
+  .testimonial .testimonial-text {
+    background-color: #333333; }
+    .testimonial .testimonial-text .testimonial-title {
+      padding: 50px 60px 33px;
+      color: #fefefe;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 20px;
+      text-transform: uppercase; }
+    .testimonial .testimonial-text .testimonial-quote {
+      padding-left: 60px;
+      padding-right: 54px; }
+      .testimonial .testimonial-text .testimonial-quote .quote-text {
+        color: #e8e8e8;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px; }
+        .testimonial .testimonial-text .testimonial-quote .quote-text .quote-sign {
+          color: #5474fd;
+          position: relative;
+          float: left;
+          top: -2.5em;
+          margin: 30px 10px -3em 0; }
+
+@media screen and (max-width: 1200px) {
+  #testimonial {
+    background-image: url(../img/testimonial_sm_bg.png);
+    background-position: cover; }
+  .quote-text {
+    padding-bottom: 40px; } }
+
+.footer {
+  min-height: 268px;
+  background-color: #232323; }
+  .footer .footer-title {
+    padding-top: 120px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3.36px; }
+  .footer .footer-description {
+    padding-bottom: 30px;
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 1.6px; }
+  .footer .footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 170px; }
+    .footer .footer-links .footer-icon {
+      color: #e8e8e8;
+      font-size: 16px;
+      font-weight: 400; }
+      .footer .footer-links .footer-icon:hover {
+        color: #5474fd; }
+
+.ellipse {
+  background: red;
+  width: 200px;
+  height: 250px;
+  border-bottom-left-radius: 50% 25%;
+  border-bottom-right-radius: 50% 25%;
+  border-top-left-radius: 50% 25%;
+  border-top-right-radius: 50% 25%; }
+
+.cont-el {
+  height: 100px;
+  top: 10px; }
