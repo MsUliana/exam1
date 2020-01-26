@@ -43,6 +43,7 @@
     background-image: url(../img/header_bg.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     min-height: 740px;
     .header-title {
         padding-top: 265px;
@@ -188,6 +189,7 @@
 
 .advertising {
     background-image: url(../img/advertising_bg.png);
+    background-size: cover;
     min-height: 685px;
     .advertising-title {
         padding: 204px 0 62px;
@@ -309,12 +311,14 @@
 .booking-one {
     background-image: url(../img/booking1_bg.png);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
 
 .booking-two {
     background-image: url(../img/booking2_bg.png);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
 
@@ -374,6 +378,7 @@
 .testimonial {
     background-image: url(../img/testimonial_bg.png);
     background-repeat: no-repeat;
+    background-size: cover;
     min-height: 730px;
     .testimonial-name {
         padding-top: 120px;
